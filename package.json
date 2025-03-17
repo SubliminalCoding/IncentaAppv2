@@ -1,0 +1,36 @@
+{
+  "name": "incenta-employee-advocacy-app",
+  "version": "1.0.0",
+  "description": "Employee Advocacy App for healthcare benefits management and advocacy",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "jest --watchAll",
+    "db:seed": "node server/db/seed.js",
+    "db:migrate": "node server/db/migrate.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1450.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "uuid": "^9.0.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT"
+} 
